@@ -60,12 +60,12 @@ g++ -o simulate simulate.cpp
 g++ -o potentiation potentiation.cpp
 ./potentiation
 
-# 3. Frequency_sensitivity Simulation (Hallmark of habituation dynamics)
-g++ -o potentiation frequency_sensitivity.cpp
+# 3. Frequency sensitivity Simulation (Hallmark of habituation dynamics)
+g++ -o frequency_sensitivity frequency_sensitivity.cpp
 ./frequency_sensitivity
 
-# 4. Frequency_sensitivity Simulation (Hallmark of habituation dynamics)
-g++ -o potentiation subliminal_accumulation.cpp
+# 4. Subliminal accumulation Simulation (Hallmark of habituation dynamics)
+g++ -o subliminal_accumulation subliminal_accumulation.cpp
 ./subliminal_accumulation
 
 # 5. Phase Plane Analysis (Model behaviors on the phase plane)

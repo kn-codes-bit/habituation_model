@@ -37,11 +37,11 @@ Before running the simulations, the 7 free parameters are estimated and analyzed
 python param_search/param_search.py
 
 # 2. Plot the loss function trajectory (Modified RMSE transition) during optimization
-# Output: Generates Figure S1 in 'param_estimation_result/'
+# Output: Results are saved in 'param_estimation_result/'
 python param_search/plot_GA.py
 
 # 3. Perform Local Sensitivity Analysis to evaluate parameter robustness
-# Output: Generates Figure S2 in 'sensitivity_result/'
+# Output: Results are saved in 'sensitivity_result/'
 python param_search/local_sensitivity.py
 ```
 
@@ -51,24 +51,24 @@ Navigate to the respective directories, compile the C++ source code using standa
 
 ```bash
 # 1. Main Model Simulation (Bridge-Crossing & Variable Dynamics)
-# Output: Results for Figs. 4, 5, 6, 9, and 10 are saved in 'result/fig/'
+# Output: Results are saved in 'result/fig/'
 cd simulation/model_simulation
 g++ -o simulate simulate.cpp
 ./simulate
 
 # 2. Phase Plane Analysis (Model behaviors on the phase plane)
-# Output: Results for Figure 7 are saved in 'result/fig/'
+# Output: Results are saved in 'result/fig/'
 cd ../phase_diagram
 g++ -o simulate simulate.cpp
 ./simulate
 
 # 3. Contour Lines Plot (Analytical iso-velocity & iso-acceleration lines)
-# Output: Results for Figure 8 are saved in 'result/fig/'
+# Output: Results are saved in 'result/fig/'
 g++ -o contour contour.cpp
 ./contour
 
-# 4. Perturbation injection simulation
-# Output: Results for Figure 11 are saved in 'result/fig/'
+# 4. Perturbation injection simulation (Bridge-Crossing)
+# Output: Results are saved in 'result/fig/'
 cd ../sensitivity
 g++ -o simulate simulate.cpp
 ./simulate

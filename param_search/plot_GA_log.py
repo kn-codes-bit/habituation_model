@@ -29,6 +29,7 @@ filename = os.path.join(path_base, "history1.png")
 plt.savefig(filename, dpi=1200, bbox_inches="tight")
 
 fig1 = plt.figure()
+ax1 = fig1.add_subplot(1,1,1)
 ax1.set_ylim(22.,25.)
 cmap = plt.get_cmap('jet')
 for seed in range(SEED_num):

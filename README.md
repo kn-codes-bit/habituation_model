@@ -56,18 +56,30 @@ cd simulation/model_simulation
 g++ -o simulate simulate.cpp
 ./simulate
 
-# 2. Phase Plane Analysis (Model behaviors on the phase plane)
+# 2. Potentiation Simulation (Hallmark of habituation dynamics)
+g++ -o potentiation potentiation.cpp
+./potentiation
+
+# 3. Frequency_sensitivity Simulation (Hallmark of habituation dynamics)
+g++ -o potentiation frequency_sensitivity.cpp
+./frequency_sensitivity
+
+# 4. Frequency_sensitivity Simulation (Hallmark of habituation dynamics)
+g++ -o potentiation subliminal_accumulation.cpp
+./subliminal_accumulation
+
+# 5. Phase Plane Analysis (Model behaviors on the phase plane)
 # Output: Results are saved in 'result/fig/'
 cd ../phase_diagram
 g++ -o simulate simulate.cpp
 ./simulate
 
-# 3. Contour Lines Plot (Analytical iso-velocity & iso-acceleration lines)
+# 6. Contour Lines Plot (Analytical iso-velocity & iso-acceleration lines)
 # Output: Results are saved in 'result/fig/'
 g++ -o contour contour.cpp
 ./contour
 
-# 4. Perturbation injection simulation (Bridge-Crossing)
+# 7. Perturbation injection simulation (Bridge-Crossing)
 # Output: Results are saved in 'result/fig/'
 cd ../sensitivity
 g++ -o simulate simulate.cpp

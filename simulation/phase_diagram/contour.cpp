@@ -48,8 +48,8 @@ int main(int argc, const char* argv[])
     string equi = "result/param/param_plot.dat";
 
     // velocity
-    fprintf(gpid, "set terminal postscript eps color enhanced 'Helvetica' 12\n");
-    fprintf(gpid, "set out 'result/fig/contour_vel.eps'\n");
+    fprintf(gpid, "set terminal pngcairo\n");
+    fprintf(gpid, "set out 'result/fig/contour_vel.png'\n");
     fprintf(gpid, "unset key\n");
     fprintf(gpid, "set border lw 2\n");
     fprintf(gpid, "set tics front out\n");
@@ -60,7 +60,7 @@ int main(int argc, const char* argv[])
     fprintf(gpid, "set ytics nomirror scale 1.5\n");
     fprintf(gpid, "set object rect from %lf,%lf to %lf,%lf fillcolor rgb 'white' fillstyle solid 1 noborder behind\n", x_min, y_min, x_max, y_max);
 
-    double vel, y_sec, lw_vel=10.;
+    double vel, y_sec, lw_vel=5.;
     //　plot iso-velocity lines
     vel = -0.01;
     y_sec = vl_sec(vel, gam);
@@ -79,8 +79,8 @@ int main(int argc, const char* argv[])
     fprintf(gpid, "'%s' using 1:2 every ::0::0 w p pt 7 ps 3.0 lc rgb 'white'\n",equi.c_str()); // equilibrium point h(t)=0
 
     // acceleration
-    fprintf(gpid, "set terminal postscript eps color enhanced 'Helvetica' 12\n");
-    fprintf(gpid, "set out 'result/fig/contour_acc.eps'\n");
+    fprintf(gpid, "set terminal pngcairo\n");
+    fprintf(gpid, "set out 'result/fig/contour_acc.png'\n");
     fprintf(gpid, "reset\n");
     fprintf(gpid, "unset key\n");
     fprintf(gpid, "set border lw 2\n");
@@ -92,7 +92,7 @@ int main(int argc, const char* argv[])
     fprintf(gpid, "set ytics nomirror scale 1.5\n");
     fprintf(gpid, "set object rect from %lf,%lf to %lf,%lf fillcolor rgb 'white' fillstyle solid 1 noborder behind\n", x_min, y_min, x_max, y_max); // solid：透明度
 
-    double ac, slope=(a_de_s+Dif+rv*Dif)/(a_de+Dif+rv*Dif), lw_acc=8.;
+    double ac, slope=(a_de_s+Dif+rv*Dif)/(a_de+Dif+rv*Dif), lw_acc=5.;
 
     // plot iso-acceleration lines
     ac = -0.01;

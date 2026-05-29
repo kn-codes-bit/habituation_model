@@ -43,6 +43,7 @@ python param_search/plot_GA.py
 # 3. Perform Local Sensitivity Analysis to evaluate parameter robustness
 # Output: Generates Figure S2 in 'sensitivity_result/'
 python param_search/local_sensitivity.py
+```
 
 ### Phase 2: Core Numerical Simulations (C++)
 
@@ -71,3 +72,4 @@ g++ -o contour contour.cpp
 cd ../sensitivity
 g++ -o simulate simulate.cpp
 ./simulate
+```

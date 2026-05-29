@@ -2,7 +2,7 @@
 
 This repository contains the official C++ implementation of the numerical simulations and the Python scripts for parameter estimation in our manuscript:  
 > **"Mathematical Modeling for a Primitive Form of Habituation in an Amoeba"**
-> *Kota Nishi, Atsushi Tero, Yukinori Nishigami, Toshiyuki Nakagaki (Under Review)
+> Kota Nishi, Atsushi Tero, Yukinori Nishigami, Toshiyuki Nakagaki (Under Review)
 
 ---
 

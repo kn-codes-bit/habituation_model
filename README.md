@@ -1,7 +1,7 @@
 # Mathematical Modeling for a Primitive Form of Habituation in an Amoeba
 
 [![Paper](https://img.shields.io/badge/Paper-DOI-blue)](https://doi.org/10.1007/s00285-026-02438-7)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20438610.svg)](https://doi.org/10.5281/zenodo.20438610)
+[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281/zenodo.20438610-blue)](https://doi.org/10.5281/zenodo.20438610)
 
 This repository contains the official C++ implementation of the numerical simulations and the Python scripts for parameter estimation in our manuscript:  
 > **"Mathematical Modeling for a Primitive Form of Habituation in an Amoeba"**
